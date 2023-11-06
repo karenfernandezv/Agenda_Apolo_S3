@@ -14,7 +14,10 @@
 <ion-content>
   <div class="tasks-container">
     <ion-input placeholder="Agregar tarea" [(ngModel)]="newTask"></ion-input>
-    <ion-datetime displayFormat="D MMM YYYY, HH:mm" placeholder="Fecha y hora" [(ngModel)]="newDate"></ion-datetime>
+    <label for="meeting-time">Elige la fecha y hora para tu recordatorio:</label>
+
+    <input type="datetime-local" id="meeting-time" name="meeting-time" value="2023-11-06T19:30" min="2023-11-06T00:00"
+      max="2018-06-14T00:00" />
     <ion-button (click)="addTask()">Agregar</ion-button>
     <ion-list>
       <ion-item *ngFor="let task of tasks; let i = index">
