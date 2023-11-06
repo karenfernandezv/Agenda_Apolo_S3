@@ -1,0 +1,25 @@
+.tasks-container {
+    background-color: #50c7ff;
+    border-radius: 15px;
+    padding: 1em;
+    color: black;
+    margin: 1em;
+
+    & ion-input{
+      border: 1px solid #50c7ff;
+      border-radius: 15px;
+      padding: 1em;
+      margin-bottom: 10px;
+    }
+  }
+  
+  .task-item {
+    margin: 10px 0;
+    border: 1px solid #50c7ff;
+    border-radius: 15px;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }

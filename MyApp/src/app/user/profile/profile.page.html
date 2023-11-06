@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-header>
+  <ion-toolbar [color]="color">
+    <ion-title>{{ username }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [color]="color" class="ion-text-center">
+  <ion-card-subtitle><ion-icon name="person-circle-outline"></ion-icon></ion-card-subtitle>
+  <p>{{ username }}</p>
+  <ion-button (click)="changeColor()">Cambiar Modo</ion-button>
+  <ion-button [routerLink]="['/tasks']" routerDirection="root">Tareas</ion-button>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>© 2023 Agenda Apolo</ion-title>
+  </ion-toolbar>
+</ion-footer>
